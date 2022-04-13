@@ -68,7 +68,9 @@ public class FLoginController implements Initializable {
         Scene scene = new Scene(d);
         stage.setScene(scene);
     }
-    
+    //ban đầu abcdef
+    // sau đó nhập ___abc___def___(_ là space) => xử lý sai
+    // so sánh độ dài username trong textbox và username trong csdl (equalsTo)
 
 
    

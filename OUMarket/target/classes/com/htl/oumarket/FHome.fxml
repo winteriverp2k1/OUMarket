@@ -14,12 +14,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.htl.oumarket.FHomeController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.htl.oumarket.FHomeController">
    <children>
       <HBox maxHeight="150.0" prefHeight="50.0" prefWidth="1024.0" style="-fx-background-color: white;">
          <children>
-            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="1024.0" style="-fx-background-color: pink;" text="WELCOME, AAA BBB" textAlignment="CENTER" textFill="RED">
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="50.0" prefWidth="1037.0" style="-fx-background-color: pink;" text="WELCOME, AAA BBB" textAlignment="CENTER" textFill="RED">
                <graphic>
                   <Button fx:id="btnExit" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Exit" prefHeight="30.0" prefWidth="120.0" text="ĐĂNG XUẤT" />
                </graphic>
@@ -28,7 +27,7 @@
       </HBox>
       <TabPane prefHeight="590.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab closable="false" text="Quản lý nhân viên">
+          <Tab closable="false" text="Nhân viên">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -164,11 +163,11 @@
                                     <Insets bottom="5.0" />
                                  </VBox.margin>
                               </TextField>
-                              <TextField layoutX="10.0" layoutY="234.0" prefHeight="40.0" promptText="Nhập chức vụ">
+                              <ComboBox layoutX="10.0" layoutY="368.0" prefHeight="40.0" prefWidth="282.0" promptText="Nhấp chọn chức vụ">
                                  <VBox.margin>
                                     <Insets bottom="5.0" />
                                  </VBox.margin>
-                              </TextField>
+                              </ComboBox>
                               <TextField layoutX="10.0" layoutY="274.0" prefHeight="40.0" promptText="Nhập số tiền lương">
                                  <VBox.margin>
                                     <Insets bottom="5.0" />
@@ -196,7 +195,7 @@
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab closable="false" text="Quản lý chi nhánh">
+          <Tab closable="false" text="Chi nhánh">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -277,7 +276,7 @@
                   </AnchorPane>
             </content>
           </Tab>
-            <Tab closable="false" text="Quản lý hàng hóa">
+            <Tab closable="false" text="Hàng hóa">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -397,7 +396,7 @@
                   </AnchorPane>
                </content>
             </Tab>
-            <Tab closable="false" text="Quản lý khuyến mãi">
+            <Tab closable="false" text="Khuyến mãi">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -461,17 +460,17 @@
                               </TextField>
                            </children>
                         </VBox>
-                        <Button layoutX="10.0" layoutY="349.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="127.0" text="Thêm khuyến mãi">
+                        <Button layoutX="10.0" layoutY="349.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="145.0" text="Thêm khuyến mãi">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="146.0" layoutY="349.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="127.0" text="Sửa khuyến mãi">
+                        <Button layoutX="167.0" layoutY="349.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="127.0" text="Sửa khuyến mãi">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
-                        <Button layoutX="286.0" layoutY="349.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="127.0" text="Xóa khuyến mãi">
+                        <Button layoutX="306.0" layoutY="349.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="127.0" text="Xóa khuyến mãi">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -491,7 +490,7 @@
                   </AnchorPane>
               </content>
             </Tab>
-            <Tab closable="false" text="Quản lý khách hàng">
+            <Tab closable="false" text="Khách hàng">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -698,10 +697,10 @@
                               </Label>
                            </children>
                         </VBox>
-                        <TableView layoutX="20.0" layoutY="200.0" prefHeight="320.0" prefWidth="1000.0" />
+                        <TableView layoutX="20.0" layoutY="254.0" prefHeight="266.0" prefWidth="1000.0" />
                         <VBox layoutX="548.0" layoutY="14.0" prefHeight="183.0" prefWidth="280.0">
                            <children>
-                              <TextField prefHeight="40.0">
+                              <TextField disable="true" prefHeight="40.0">
                                  <VBox.margin>
                                     <Insets bottom="5.0" />
                                  </VBox.margin>
@@ -711,7 +710,7 @@
                                     <Insets bottom="5.0" />
                                  </VBox.margin>
                               </TextField>
-                              <TextField prefHeight="40.0">
+                              <TextField disable="true" prefHeight="40.0">
                                  <VBox.margin>
                                     <Insets bottom="5.0" />
                                  </VBox.margin>
@@ -723,11 +722,15 @@
                               </TextField>
                            </children>
                         </VBox>
+                        <Button layoutX="855.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" text="Thêm sản phẩm" />
+                        <Button layoutX="855.0" layoutY="66.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" text="Cập nhật sản phẩm" />
+                        <Button layoutX="855.0" layoutY="121.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" text="Xóa sản phẩm" />
+                        <Button layoutX="855.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" text="Lưu hóa đơn" />
                      </children>
                   </AnchorPane>
               </content>
             </Tab>
-            <Tab closable="false" text="Quản lý thông tin hóa đơn">
+            <Tab closable="false" text="Thông tin hóa đơn">
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
